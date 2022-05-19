@@ -18,7 +18,7 @@ const contentStyle = {
 
 const MyCarousel = () => {
 	return (
-		<div>
+		<div className='mycarousel'>
 			<Carousel autoplay>
 				<div>
 					<h3 style={contentStyle}>

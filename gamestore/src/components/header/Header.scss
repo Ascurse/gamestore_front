@@ -16,7 +16,13 @@ $text-color: #FFFFFF;
     color: $text-color;
 }
 .header__cart {
+    display: flex;
     flex: 1;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.header__total {
+    padding: 0px 20px 0px 20px;
     color: $text-color;
-    margin: auto;
 }
