@@ -1,0 +1,22 @@
+$primary-color: #111226;
+$text-color: #FFFFFF;
+
+.header {
+    display: flex;
+    min-height: 70px;
+    background-color: $primary-color;
+    flex-direction: row;
+}
+.header__left {
+    flex: 1;
+}
+.header__title {
+    align-items: center;
+    flex: 1;
+    color: $text-color;
+}
+.header__cart {
+    flex: 1;
+    color: $text-color;
+    margin: auto;
+}
