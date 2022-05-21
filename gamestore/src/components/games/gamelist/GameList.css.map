@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,SAAS,CAAC;EACN,IAAI,EAAE,CAAC;CACV",
+    "mappings": "AAAA,AAAA,SAAS,CAAC;EACN,OAAO,EAAE,IAAI;EACb,IAAI,EAAE,CAAC;EACP,cAAc,EAAE,GAAG;EACnB,SAAS,EAAE,IAAI;CAClB",
     "sources": [
         "GameList.scss"
     ],

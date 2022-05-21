@@ -1,3 +1,6 @@
 .gamelist {
+    display: flex;
     flex: 4;
+    flex-direction: row;
+    flex-wrap: wrap;
 }

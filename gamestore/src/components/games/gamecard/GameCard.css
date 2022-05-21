@@ -1,0 +1,60 @@
+.gamecard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 350px;
+  max-height: 400px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: none;
+  margin: 10px 20px 10px 20px;
+  background-color: #111226;
+  border-radius: 10px;
+}
+
+.game-cover {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-height: 200px;
+  min-width: 300px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.game-about {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.game-genre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: 10px;
+}
+
+.game-title {
+  color: white;
+}
+
+.game-price {
+  color: white;
+}
+
+.game-year {
+  color: white;
+}
+/*# sourceMappingURL=GameCard.css.map */
