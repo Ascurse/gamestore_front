@@ -49,4 +49,26 @@
   padding: 0px 20px 0px 20px;
   color: #FFFFFF;
 }
+
+.cart-menu {
+  width: 400px;
+  padding: 10px 20px;
+  z-index: 2;
+}
+
+.cart-menu__arrange {
+  margin-top: 20px;
+  padding: 20px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.cart-menu__total-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 15px;
+}
 /*# sourceMappingURL=Header.css.map */

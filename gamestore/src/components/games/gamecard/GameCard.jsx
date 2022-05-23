@@ -1,9 +1,10 @@
 import React from 'react'
 import CategoryItem from '../../categories/CategoryItem'
 import './GameCard.css'
-import { Button } from 'antd';
+import GameButton from '../gamebuy-button/GameButton';
 
 const GameCard = ({ game }) => {
+
   return (
     <div className='gamecard'>
 			<div className='game-cover' style={{backgroundImage: `url(${game.image})`, objectFit: 'cover'}} />
@@ -14,7 +15,7 @@ const GameCard = ({ game }) => {
 				</div>
 				<h2 className='game-price'>Price: {game.price}$</h2>
 				<h3 className='game-year'>Release year: {game.year}</h3>
-				<Button type='primary'>Add to Cart</Button>
+				<GameButton game={game} />
 			</div>
     </div>
   )

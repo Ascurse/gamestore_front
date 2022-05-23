@@ -1,20 +1,55 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
 import './Header.css'
 import { ShoppingCartOutlined } from '@ant-design/icons'
-import { Badge } from 'antd'
+import { Badge, Popover } from 'antd'
+import { CartItem } from '../cart-item/CartItem'
+import { Button } from 'antd'
 
 const Header = () => {
+  const items = useSelector(state => state.cart.itemsInCart);
+  const totalPrice = items.reduce((acc, game) => acc += game.price , 0)
+
+  const content = (
+    <div className='cart-menu'>
+      <div className='cart-menu__games-list'>
+        {items.length > 0
+          ? items.map((game) => (
+            <CartItem
+              key={game.image}
+              image={game.image}
+              price={game.price}
+              title={game.name}
+							id={game.id}
+            />
+              ))
+            : "Your cart is empty"}
+      </div>
+			{items.length > 0 ? (
+        <div className="cart-menu__arrange">
+          <div className="cart-menu__total-price">
+            <span>Total sum:</span>
+            <span>{totalPrice} $</span>
+          </div>
+          <Button type="primary" size="m">
+            Checkout
+          </Button>
+        </div>
+      ) : null}
+    </div>
+  )
+
   return (
     <div className='header'>
       <div className='header__left'></div>
       <h1 className='header__title'>Gamer HUB</h1>
       <div className='header__cart'>
-        <a href="#">
-          <Badge count={5}>
+        <Popover content={content}>
+          <Badge count={items.length}>
             <ShoppingCartOutlined style={{fontSize: '30px', color: '#FFFFFF'}}/>
           </Badge>
-        </a>
-        <h2 className='header__total'>Total sum: 29$</h2>
+        </Popover>
+        <h2 className='header__total'>Total sum: {totalPrice}$</h2>
       </div>
     </div>
   )
