@@ -1,12 +1,27 @@
-import React from 'react'
-import './CategoryItem.css'
+import React from "react";
+import { useDispatch, useSelector } from "react-redux";
+import "./CategoryItem.css";
+import { setCurrentCategory } from "../../redux/filter/reducer";
 
 const CategoryItem = ({ category }) => {
-  return (
-    <div className='categoryitem' style={{color: category.color, borderColor: category.color}}>
-        {category.name}
-    </div>
-  )
-}
+  const dispatch = useDispatch();
+  const handleClick = () => {
+    dispatch(setCurrentCategory(category));
+  };
+  const categoryitem = useSelector((state) => state.category.currentCategory);
 
-export default CategoryItem
+  return (
+    <button
+      className="categoryitem"
+      style={{
+        color: category.color,
+        borderColor: category.color,
+      }}
+      onClick={handleClick}
+    >
+      {category.name}
+    </button>
+  );
+};
+
+export default CategoryItem;

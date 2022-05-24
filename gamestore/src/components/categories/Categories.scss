@@ -1,4 +1,7 @@
 .categories {
+    display: flex;
+    flex-direction: column;
     flex: 1;
     background-color: #111226;
+    justify-content: flex-start;
 }

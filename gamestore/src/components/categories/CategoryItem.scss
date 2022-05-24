@@ -1,11 +1,18 @@
 .categoryitem {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: transparent;
     border: solid 2px;
     border-radius: 10px;
-    margin: 5px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
     font-size: larger;
     font-weight: 500;
     cursor: pointer;
     &:hover{
         background-color: blue;
+    }
+    &:focus{
+        background-color: white;
     }
 }
