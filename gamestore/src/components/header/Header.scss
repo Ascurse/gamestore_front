@@ -10,10 +10,12 @@ $text-color: #FFFFFF;
 .header__left {
     flex: 1;
 }
-.header__title {
+.header__logo {
     align-items: center;
     flex: 1;
-    color: $text-color;
+    max-width: 180px;
+    max-height: 80px;
+    object-fit: cover;
 }
 .header__cart {
     display: flex;
