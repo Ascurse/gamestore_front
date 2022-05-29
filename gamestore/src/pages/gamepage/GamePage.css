@@ -1,0 +1,45 @@
+.game-page {
+  background: -webkit-gradient(linear, left top, left bottom, from(#111226), color-stop(48.96%, rgba(88, 33, 166, 0.9)), to(rgba(137, 70, 166, 0.9)));
+  background: linear-gradient(180deg, #111226 0%, rgba(88, 33, 166, 0.9) 48.96%, rgba(137, 70, 166, 0.9) 100%);
+  min-height: 100vh;
+  color: #FFFFFF;
+}
+
+.game-page__title {
+  color: #FFFFFF;
+}
+
+.game-page__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #111226;
+}
+
+.game-page__left {
+  width: 60%;
+}
+
+.game-page__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.game-page__about {
+  background-color: #111226;
+}
+
+.game-page__about h2 {
+  color: #FFFFFF;
+}
+/*# sourceMappingURL=GamePage.css.map */

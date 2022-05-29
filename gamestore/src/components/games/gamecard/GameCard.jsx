@@ -2,11 +2,21 @@ import React from 'react'
 import CategoryItem from '../../categories/CategoryItem'
 import './GameCard.css'
 import GameButton from '../gamebuy-button/GameButton';
+import { useNavigate } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { setCurrentGame } from '../../../redux/game/reducer';
 
 const GameCard = ({ game }) => {
 
+	const navigate = useNavigate()
+  const dispatch = useDispatch()
+  const handleClick = () => {
+    dispatch(setCurrentGame(game));
+    navigate(`/${game.name}`);
+  }
+
   return (
-    <div className='gamecard'>
+    <div className='gamecard' onClick={handleClick}>
 			<div className='game-cover' style={{backgroundImage: `url(${game.image})`, objectFit: 'cover'}} />
 			<div className='game-about'>
 				<h3 className='game-title'>{game.name}</h3>

@@ -21,5 +21,5 @@ I created a simple backend for this project - https://github.com/Ascurse/gamesto
 - You can add games to cart. Cart badge displays how many games you have in cart. Total sum displayed in header. Pop over displays when you hover on cart icon and shows all required info. Game can be removed from card in popover(thrashbin icon) or by clicking on 'Remove from Cart' 
 <img src='./gamestore/demo/cart.gif' alt='Main Page Filters Demo'/>
 
-# TODO
-- Game details page
+- Game page opens when you click on game-card. Games can be added/removed from card from both homepage and game page.
+<img src='./gamestore/demo/game-page.gif' alt='Game Page Demo'/>
