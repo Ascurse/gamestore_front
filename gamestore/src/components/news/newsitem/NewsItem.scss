@@ -1,0 +1,42 @@
+.newsitem {
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    border: none;
+    margin: 10px;
+    justify-content: center;
+    color: white;
+    background-color: #111226;
+    border-radius: 20px;
+}
+
+.news-title {
+    flex: 1;
+    color: white;
+}
+
+.img-post {
+    display: flex;
+    flex-direction: row;
+}
+
+.news-image {
+    flex: 1;
+    min-height: 500px;
+    min-width: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.news-post {
+    flex: 1;
+    font-size: medium;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.news-time {
+    flex: 1
+}

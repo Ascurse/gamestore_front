@@ -1,20 +1,20 @@
-import React from 'react'
-import MyCarousel from '../../components/carousel/Carousel'
-import Categories from '../../components/categories/Categories'
-import GameList from '../../components/games/gamelist/GameList'
-import Header from '../../components/header/Header'
-import './Homepage.css'
+import { Menu } from "antd";
+import React from "react";
+import MyCarousel from "../../components/carousel/Carousel";
+import GameList from "../../components/games/gamelist/GameList";
+import Navbar from "../../components/navbar/Navbar";
+import "./Homepage.css";
 
 const Homepage = () => {
   return (
-    <div>
+    <div className="page-content">
       <MyCarousel />
-			<div className='main_content'>
-				<Categories />
+      <div className="main_content">
+        <Navbar />
         <GameList />
-			</div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Homepage
+export default Homepage;

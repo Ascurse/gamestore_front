@@ -8,10 +8,12 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  max-height: 50px;
+  min-width: 100px;
   background-color: transparent;
   border: solid 2px;
   border-radius: 10px;
-  margin: 10px 10px 10px 10px;
+  margin: 0px 10px 10px 10px;
   font-size: larger;
   font-weight: 500;
   cursor: pointer;

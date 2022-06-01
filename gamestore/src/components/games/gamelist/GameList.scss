@@ -1,7 +1,14 @@
+.gamelist-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 80%;
+}
+
 .gamelist {
     display: flex;
     flex: 4;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
 }

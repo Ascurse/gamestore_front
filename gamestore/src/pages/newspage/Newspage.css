@@ -1,0 +1,14 @@
+.newspage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: -webkit-gradient(linear, left top, left bottom, from(#111226), color-stop(48.96%, rgba(88, 33, 166, 0.9)), to(rgba(137, 70, 166, 0.9)));
+  background: linear-gradient(180deg, #111226 0%, rgba(88, 33, 166, 0.9) 48.96%, rgba(137, 70, 166, 0.9) 100%);
+  mix-blend-mode: normal;
+  min-height: 1000px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+/*# sourceMappingURL=Newspage.css.map */

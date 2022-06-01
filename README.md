@@ -23,3 +23,7 @@ I created a simple backend for this project - https://github.com/Ascurse/gamesto
 
 - Game page opens when you click on game-card. Games can be added/removed from card from both homepage and game page.
 <img src='./gamestore/demo/game-page.gif' alt='Game Page Demo'/>
+
+## Update
+- Created simple nav-sidebar. Moved game categories. Created News page.
+<img src='./gamestore/demo/news.gif' alt='News Demo'/>
