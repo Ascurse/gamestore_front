@@ -6,5 +6,8 @@
   background: linear-gradient(180deg, #111226 0%, rgba(88, 33, 166, 0.9) 48.96%, rgba(137, 70, 166, 0.9) 100%);
   mix-blend-mode: normal;
   min-height: 1000px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=Homepage.css.map */

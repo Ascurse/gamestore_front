@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 import Categories from "../../categories/Categories";
 import GameCard from "../gamecard/GameCard";
+import { motion } from "framer-motion";
 import "./GameList.css";
 
 const GameList = () => {
@@ -40,7 +41,7 @@ const GameList = () => {
       <Categories />
       <div className="gamelist">
         {filtered.length > 0 ? (
-          filtered.map((game) => <GameCard game={game} key={game.id} />)
+          filtered.map((game) => <GameCard game={game} key={game.id}/>)
         ) : (
           <h1 style={{ color: "white" }}>No games in this category :C</h1>
         )}

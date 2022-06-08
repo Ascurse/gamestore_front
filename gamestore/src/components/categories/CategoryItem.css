@@ -26,4 +26,12 @@
 .categoryitem:focus {
   background-color: white;
 }
+
+@media screen and (max-width: 600px) {
+  .categoryitem {
+    font-size: smaller;
+    min-height: 20px;
+    min-width: 40px;
+  }
+}
 /*# sourceMappingURL=CategoryItem.css.map */

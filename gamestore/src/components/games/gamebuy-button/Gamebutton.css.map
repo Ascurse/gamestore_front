@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,aAAa,CAAC;EACV,eAAe,EAAE,MAAM;CAC1B",
+    "sources": [
+        "Gamebutton.scss"
+    ],
+    "names": [],
+    "file": "Gamebutton.css"
+}

@@ -11,9 +11,6 @@ I created a simple backend for this project - https://github.com/Ascurse/gamesto
 - Axios
 
 # Demo
-- Main page carousel for announcements:
-<img src='./gamestore/demo/main.gif' alt='Main Page Carousel Demo'/>
-
 - Game card has: image, title, genres (can be more than one), release year, price and 'Add to cart' button.
 - All games can be filtered by genre:
 <img src='./gamestore/demo/categories.gif' alt='Main Page Filters Demo'/>
@@ -24,6 +21,5 @@ I created a simple backend for this project - https://github.com/Ascurse/gamesto
 - Game page opens when you click on game-card. Games can be added/removed from card from both homepage and game page.
 <img src='./gamestore/demo/game-page.gif' alt='Game Page Demo'/>
 
-## Update
-- Created simple nav-sidebar. Moved game categories. Created News page.
+- News page and menu.
 <img src='./gamestore/demo/news.gif' alt='News Demo'/>

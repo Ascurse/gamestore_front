@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <div className="navbar">
-      <Menu theme="dark" style={{ width: 256, fontSize: 20 }}>
+      <Menu theme="dark" style={{ maxWidth: 254, fontSize: 20, backgroundColor: '#111226' }} mode="horizontal">
         <Menu.Item>
           <Link to={"/news"}>News</Link>
         </Menu.Item>

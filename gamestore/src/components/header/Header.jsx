@@ -7,6 +7,7 @@ import { CartItem } from "../cart-item/CartItem";
 import { Button } from "antd";
 import GamerHub from './assets/GamerHUB.png'
 import { Link } from "react-router-dom";
+import Navbar from "../navbar/Navbar";
 
 const Header = () => {
   const items = useSelector((state) => state.cart.itemsInCart);
@@ -43,7 +44,9 @@ const Header = () => {
 
   return (
     <div className="header">
-      <div className="header__left"></div>
+      <div className="header__left">
+        <Navbar />
+      </div>
       <div className="header__logo">
         <Link to="/">
           <img className="header__logo" src={GamerHub} />

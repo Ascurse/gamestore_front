@@ -2,6 +2,7 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import "./CategoryItem.css";
 import { setCurrentCategory } from "../../redux/filter/reducer";
+import { motion } from "framer-motion";
 
 const CategoryItem = ({ category }) => {
   const dispatch = useDispatch();
@@ -11,16 +12,17 @@ const CategoryItem = ({ category }) => {
   const categoryitem = useSelector((state) => state.category.currentCategory);
 
   return (
-    <button
+    <motion.button
       className="categoryitem"
       style={{
         color: category.color,
         borderColor: category.color,
       }}
+      whileHover={{scale: 1.3}}
       onClick={handleClick}
     >
       {category.name}
-    </button>
+    </motion.button>
   );
 };
 

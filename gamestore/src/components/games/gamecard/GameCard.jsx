@@ -5,6 +5,7 @@ import GameButton from "../gamebuy-button/GameButton";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { setCurrentGame } from "../../../redux/game/reducer";
+import { motion } from "framer-motion";
 
 const GameCard = ({ game }) => {
   const navigate = useNavigate();
@@ -15,7 +16,13 @@ const GameCard = ({ game }) => {
   };
 
   return (
-    <div className="gamecard" onClick={handleClick}>
+    <motion.div 
+      className="gamecard" 
+      onClick={handleClick}
+      initial={{opacity: 0}}
+      animate={{opacity: 1}}
+      transition={{duration: 1}}
+      >
       <div
         className="game-cover"
         style={{ backgroundImage: `url(${game.image})`, objectFit: "cover" }}
@@ -31,7 +38,7 @@ const GameCard = ({ game }) => {
         <h3 className="game-year">Release year: {game.year}</h3>
         <GameButton game={game} />
       </div>
-    </div>
+    </motion.div>
   );
 };
 

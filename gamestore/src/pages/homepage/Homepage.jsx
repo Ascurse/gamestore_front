@@ -10,7 +10,6 @@ const Homepage = () => {
     <div className="page-content">
       <MyCarousel />
       <div className="main_content">
-        <Navbar />
         <GameList />
       </div>
     </div>
